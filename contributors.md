@@ -439,4 +439,48 @@ Authors, their affiliations and roles.
  ...
 </back>
 
+````
+## PMC Tagging Guidelines example
 
+This example just shows the contrib-group associated with a collaborative author. This does not
+contain examples of the author/affiliation relationship(s). This tagging is valid in NLM 3.0
+and all JATS versions.
+
+```xml
+
+<contrib-group>
+  <contrib contrib-type="author">
+    <name>
+      <surname>Church</surname><given-names>Deanna M.</given-names>
+    </name>
+  </contrib>
+  <contrib contrib-type="author">
+    <name>
+      <surname>Goodstadt</surname><given-names>Leo</given-names>
+    </name>
+  </contrib>
+  <contrib contrib-type="author">
+    <name>
+      <surname>Hillier</surname><given-names>LaDeana W.</given-names>
+    </name>
+  </contrib>
+  <contrib contrib-type="author">
+    <collab>
+      The Mouse Genome Sequencing Consortium
+      <contrib-group>
+        <contrib>
+          <name>
+            <surname>Kelly</surname><given-names>Laura A.</given-names>
+          </name>
+        </contrib>
+        <contrib>
+          <name>
+            <surname>Randall</surname><given-names>Daniel Lee</given-names>
+            <suffix>Jr.</suffix>
+          </name>
+        </contrib>
+      </contrib-group>
+    </collab>
+  </contrib>
+</contrib-group>
+````
