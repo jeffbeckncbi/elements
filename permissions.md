@@ -28,3 +28,57 @@ Article permissions: copyright details, license URL, license text.
                 </license>
             </permissions>
 ```
+
+## PMC Tagging Guidelines examples
+
+#### Multiple License Types
+
+```xml
+<permissions>
+  <copyright-statement>Copyright &#xA9; 2012 Medical
+    Publishing Corp.</copyright-statement>
+  <copyright-year>2012</copyright-year>
+  <license license-type="open-access"
+    xlink:href="http://creativecommons.org/licenses/by-nc/3.0/">
+    <license-p>This article is distributed under the terms of the
+      Creative Commons Attribution Non-Commercial License, which permits
+      unrestricted non-commercial use, distribution, and reproduction in any 
+      medium, provided the original work is properly cited.</license-p>
+  </license>
+  <license license-type="ccc">
+    <license-p>For permission to reuse copyrighted content from this publication, 
+      please go to <ext-link ext-link-type="uri" 
+      xlink:href="http://www.copyright.com">www.copyright.com</ext-link>, or 
+      contact Copyright Clearance Center, 222 Rosewood Drive, Danvers, MA 01923</license-p>
+  </license>
+</permissions>
+````
+
+#### License with URI in the license text
+
+```xml
+<license license-type="open-access">
+  <license-p>This article is distributed under the terms of the Creative Commons Attribution License 
+    (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/3.0/">
+    http://creativecommons.org/licenses/by/3.0/</ext-link>), which permits unrestricted use and 
+    redistribution provided that the original author and source are credited.</license-p>
+</license>
+````
+#### License with URI not in the license text
+
+```xml
+<license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/3.0/">
+  <license-p>This article is distributed under the terms of the Creative Commons Attribution License, 
+  which permits unrestricted use and redistribution provided that the original author and 
+  source are credited.</license-p>
+</license>
+````
+
+
+
+
+
+
+
+
+
